@@ -1,22 +1,31 @@
+/*****************************************************************************
+    set the size of the body to window size
+*/
 body {
     margin: 0;
     height: 65vh;
     padding-top: 35vh;
     font-size: 1.2vmin;
 }
+
+/*****************************************************************************
+    center the form  on the window, add some styling
+*/
 form {
     margin: 0% auto 0%;
     width: 30vmin;
-    border: 3px solid black;
     background: white;
-    border-radius: 1.5vmin;
     text-align: center;
+    border: 0.25vmin solid black;
+    border-radius: 1.5vmin;
 }
 h1 {
-    letter-spacing: -1px;
     font-size: 2.6em;
 }
 
+/*****************************************************************************
+    general styles for both input elements
+*/
 input {
     display: block;
 
@@ -27,20 +36,18 @@ input {
     font-size: 1.2em;
     font-weight: 600;
 
-    border-color: silver;
-    outline: none;
     border-style: solid;
-    box-shadow: none;
+    border-color: silver;
+    outline-color: transparent;
 }
-
-#color-value:focus {
-    box-shadow: 0 0 15px 5px blue;
-}
-
+/* and a greenish background color and a small box-shadow for the button */
 #submit {
     background: #69f23c;
 }
 
-.add-blue-border {
-    box-shadow: 0 0 15px 5px blue;
+/*****************************************************************************
+    The border to add to a input element which was clicked
+*/
+.blue-border {
+    box-shadow: 0 0 0.5vmin 0.5vmin #74a0f8;
 }
