@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 65vh;
+    padding-top: 35vh;
+    font-size: 1.2vmin;
+}
+form {
+    margin: 0% auto 0%;
+    width: 30vmin;
+    border: 3px solid black;
+    background: white;
+    border-radius: 1.5vmin;
+    text-align: center;
+}
+h1 {
+    letter-spacing: -1px;
+    font-size: 2.6em;
+}
+
+input {
+    display: block;
+
+    margin: 10% auto;
+    width: 80%;
+    padding: 1%;
+
+    font-size: 1.2em;
+    font-weight: 600;
+
+    border-color: silver;
+    outline: none;
+    border-style: solid;
+    box-shadow: none;
+}
+
+#color-value:focus {
+    box-shadow: 0 0 15px 5px blue;
+}
+
+#submit {
+    background: #69f23c;
+}
+
+.add-blue-border {
+    box-shadow: 0 0 15px 5px blue;
+}
