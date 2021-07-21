@@ -3,24 +3,33 @@
 */
 body {
     margin: 0;
-    height: 65vh;
-    padding-top: 35vh;
-    font-size: 1.2vmin;
+    font-size: 1vmin;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*****************************************************************************
-    center the form  on the window, add some styling
+    center form on window, add some styling
 */
 form {
-    margin: 0% auto 0%;
-    width: 30vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 35vmin;
+    height: 25vmin;
     background: white;
-    text-align: center;
     border: 0.25vmin solid black;
-    border-radius: 1.5vmin;
+    border-radius: 2vmin;
+    outline: none;
 }
 h1 {
-    font-size: 2.6em;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
 }
 
 /*****************************************************************************
@@ -29,24 +38,25 @@ h1 {
 input {
     display: block;
 
-    margin: 10% auto;
+    margin: 0;
     width: 80%;
-    padding: 1%;
+    padding: 2%;
 
-    font-size: 1.2em;
+    font-size: 2.5em;
     font-weight: 600;
 
-    border-style: solid;
-    border-color: silver;
-    outline-color: transparent;
+    outline: none;
+    border: 0.1vmin solid silver;
 }
 /* and a greenish background color and a small box-shadow for the button */
 #submit {
     background: #69f23c;
+    margin: 0;
 }
 
 /*****************************************************************************
     The border to add to a input element which was clicked
+    This style is only used by JS!
 */
 .blue-border {
     box-shadow: 0 0 0.5vmin 0.5vmin #74a0f8;
