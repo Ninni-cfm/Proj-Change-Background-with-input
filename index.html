@@ -13,10 +13,10 @@
 
 <body>
 
-    <form>
-        <input type="text" name="color-text" id="color-text" onclick="textClicked()">
+    <form onsubmit="return false">
+        <input type="text" name="color-text" id="txt-background" onfocus="textFocused()">
         <h1>Give me a Color!</h1>
-        <input type="button" value="Senden" id="submit" onclick="buttonClicked()">
+        <input type="button" value="Senden" id="btn-submit" onclick="buttonClicked()" onfocus="buttonFocused()">
     </form>
 
     <script src="assets/js/main.js"></script>
